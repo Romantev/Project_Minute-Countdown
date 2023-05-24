@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(188, 188, 188);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.873);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(188, 188, 188);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+}
+
+input {
+  border-radius: 1px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  width: 25%;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  background: rgb(188, 188, 188);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+article {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 2rem;
+  background: rgb(188, 188, 188);
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+button:nth-of-type(4) {
+  background: rgba(255, 119, 119, 0.517);
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    border: none;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 1.4rem;
+  }
+}
