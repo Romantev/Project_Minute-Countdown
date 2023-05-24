@@ -4,7 +4,7 @@ let inputVal = Number(document.querySelector("#minutes").value);
 let countDown;
 let secVal = 1;
 
-//! Var for one click function
+//! Var for one click function: so that the function is started only once and does not overlap
 let startScope = false;
 let continueScope = false;
 
